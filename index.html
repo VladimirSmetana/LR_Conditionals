@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 1 Conditionals in English</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Topic 1 Conditionals in English</h1>
+<p>What are conditionals in English grammar? Sometimes we call <br />
+   them 'if clauses'. They describe the result of something that <br />
+   might happen (in the present or future) or might have happened <br />
+   but didn't (in the past) . They are made using different <br />
+   English verb tenses.
+</p>
+<h4 id="title">Information</h4>
+<!-- Zero -->
+<div class="box box1">
+Zero Conditional<br />
+Usage: For facts, general truths, and scientific facts. It describes situations that are always true<br />
+Structure: If/When + Present Simple, ... Present Simple.
+</div>
+<div class="zero"></div>
+<div imya="">
+    If you heat ice, it melts. <br />
+    When the sun sets, it gets dark. <br />
+    If people don't drink water, they become dehydrated.
+</div>
+<!-- First -->
+<div class="box box2">
+First Conditional<br />
+Usage: For real and possible situations in the future. It describes a likely outcome of a specific condition.<br />
+Structure: If + Present Simple, ... will + base verb.
+</div>
+<div class="first"></div>
+<div imya="">
+    If it rains tomorrow, we will cancel the picnic. <br />
+    If you study hard, you will pass the exam. <br />
+    If I have time, I might go to the gym.
+</div>
+<!-- Second -->
+<div class="box box3">
+Second Conditional<br />
+Usage: For unreal, imaginary, or hypothetical situations in the present or future. It describes unlikely or impossible outcomes. It is also used to give advice.<br />
+Structure: If + Past Simple, ... would/could/might + base verb.
+</div>
+<div class="second"></div>
+<div imya="">
+    If I won the lottery, I would travel the world. (I probably won't win) <br />
+    If I were you, I would apologize. (Giving advice - I am not you) <br />
+    If he had a car, he could drive us to the party. (He doesn't have a car)
+</div>
+<!-- Third -->
+<div class="box box4">
+Third Conditional<br />
+Usage: For hypothetical situations in the past. It describes a situation that did NOT happen and its imaginary consequence. It's often used to express regret or criticism.<br />
+Structure: If + Past Perfect, ... would/could/might + have + Past Participle (V3).
+</div>
+<div class="third"></div>
+<div imya="">
+    If I had studied harder, I would have passed the exam. (But I didn't study hard, and I failed.) <br />
+    She would have been late if her flight had been delayed. (But her flight wasn't delayed, so she wasn't late.) <br />
+    If they had taken the map, they couldn't have gotten lost. (But they didn't take it, so they got lost.)
+</div>
+
+<h4 id="title">Conditionals Quiz</h4>
+<ul>
+<li>1. If it rains tomorrow, we ______ the football match.</li>
+
+<form class="quiz-form">
+  <label><input type="radio" name="q1" value="a"> a) cancel</label><br>
+  <label><input type="radio" name="q1" value="b"> b) will cancel</label><br>
+  <label><input type="radio" name="q1" value="c"> c) would cancel</label>
+  <div class="message" style="display: none; color: green; font-weight: bold; margin-top: 5px;"></div>
+</form>
+<br />
+
+<li>2. If I ______ a million dollars, I would buy a private jet.</li>
+
+<form class="quiz-form">
+  <label><input type="radio" name="q2" value="a"> a) have</label><br>
+  <label><input type="radio" name="q2" value="b"> b) had</label><br>
+  <label><input type="radio" name="q2" value="c"> c) had had</label>
+  <div class="message" style="display: none; color: green; font-weight: bold; margin-top: 5px;"></div>
+</form>
+<br />
+
+<li>3. If you mix blue and yellow, you ______ green.</li>
+
+<form class="quiz-form">
+  <label><input type="radio" name="q3" value="a"> a) get</label><br>
+  <label><input type="radio" name="q3" value="b"> b) got</label><br>
+  <label><input type="radio" name="q3" value="c"> c) will get</label>
+  <div class="message" style="display: none; color: green; font-weight: bold; margin-top: 5px;"></div>
+</form>
+<br />
+
+<li>4. If she ______ to the airport on time, she wouldn't have missed her flight.</li>
+
+<form class="quiz-form">
+  <label><input type="radio" name="q4" value="a"> a) got</label><br>
+  <label><input type="radio" name="q4" value="b"> b) had got</label><br>
+  <label><input type="radio" name="q4" value="c"> c) would have got</label>
+  <div class="message" style="display: none; color: green; font-weight: bold; margin-top: 5px;"></div>
+</form>
+<br />
+
+<li>5. You'll be late for work if you ______ now.</li>
+
+<form class="quiz-form">
+  <label><input type="radio" name="q5" value="a"> a) don't leave</label><br>
+  <label><input type="radio" name="q5" value="b"> b) didn't leave</label><br>
+  <label><input type="radio" name="q5" value="c"> c) hadn't left</label>
+  <div class="message" style="display: none; color: green; font-weight: bold; margin-top: 5px;"></div>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const correctAnswers = {
+    q1: 'b',
+    q2: 'b',
+    q3: 'a',
+    q4: 'b',
+    q5: 'a'
+  };
+  
+  const forms = document.querySelectorAll('.quiz-form');
+  
+  forms.forEach(form => {
+    const radios = form.querySelectorAll('input[type="radio"]');
+    const message = form.querySelector('.message');
+    const questionName = radios[0].name; 
+    
+    radios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.value === correctAnswers[questionName]) {
+          radios.forEach(r => r.disabled = true);
+          message.textContent = 'Right! Good job!';
+          message.style.display = 'block';
+          message.style.color = 'green';
+        } else {
+          message.textContent = 'Oh....Nooo...';
+          message.style.display = 'block';
+          message.style.color = 'red';
+          
+          setTimeout(() => {
+            this.checked = false;
+            message.style.display = 'none';
+          }, 2000);
+        }
+      });
+    });
+  });
+});
+</script>
+
+</ul>
+
+<a href="https://dictionary.cambridge.org/grammar/british-grammar/conditionals">Дополнительно</a>
+
+<div psevdo="">
+Darya Smetana.
+</div>
+
+</body>
+</html>

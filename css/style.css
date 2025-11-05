@@ -1,0 +1,134 @@
+*{
+background-color:rgb(230, 252, 236) ;
+}
+h1{
+color: rgb(143, 13, 115);
+}
+.element {
+color:red;
+}
+#title {
+color:rgb(0, 128, 0);
+}
+div {
+color: rgb(39, 97, 65);
+}
+div[imya] {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #3498db;
+}
+div[psevdo] {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+p {
+color: teal;
+border: 5px rgb(0, 60, 128) solid;
+border-radius: 10px;
+font-family: sans-serif;
+font-size: 20px;
+line-height: 30px;
+}
+.zero {
+color: rgb(0, 4, 255);
+background-image: url(../img/zero.png);
+background-repeat: no-repeat;
+height: 300px;
+width: 300px;
+}
+.first {
+color: rgb(0, 4, 255);
+background-image: url(../img/first.png);
+background-repeat: no-repeat;
+height: 300px;
+width: 300px;
+}
+.second {
+color: rgb(0, 4, 255);
+background-image: url(../img/second.png);
+background-repeat: no-repeat;
+height: 300px;
+width: 300px;
+}
+.third {
+color: rgb(0, 4, 255);
+background-image: url(../img/third.png);
+background-repeat: no-repeat;
+height: 300px;
+width: 300px;
+}
+.fourth {
+color: rgb(0, 4, 255);
+background-image: url(../img/fourth.png);
+background-repeat: no-repeat;
+height: 300px;
+width: 300px;
+}
+.box {
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 16px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.box1 {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.8) 0%, rgba(52, 152, 219, 0.8) 100%);
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.3);
+}
+
+.box2 {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.8) 0%, rgba(41, 128, 185, 0.8) 100%);
+    box-shadow: 0 8px 32px rgba(41, 128, 185, 0.3);
+}
+
+.box3 {
+    background: linear-gradient(135deg, rgba(41, 128, 185, 0.8) 0%, rgba(32, 102, 148, 0.8) 100%);
+    box-shadow: 0 8px 32px rgba(32, 102, 148, 0.3);
+}
+
+.box4 {
+    background: linear-gradient(135deg, rgba(32, 102, 148, 0.8) 0%, rgba(25, 82, 119, 0.8) 100%);
+    box-shadow: 0 8px 32px rgba(25, 82, 119, 0.3);
+}
+a:hover { text-decoration: none;
+color: red;
+}
+ul li:nth-child(2){
+color: red;
+}
+div[psevdo]{
+color: rgb(43, 0, 255);
+font-size: 20px;
+}
+div[psevdo]::after{
+content: "\00A9" ;
+}
+div[psevdo]::before{
+content: "Autor: ";
+}
